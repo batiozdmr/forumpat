@@ -9,15 +9,15 @@ class Topic(models.Model):
 
 
 class Question(models.Model):
-    text = models.CharField(max_length=255)
+    content = models.TextField()
     userid = models.ForeignKey(User, on_delete=models.PROTECT)
-    stasus = models.BooleanField(default=False)
+    is_active = models.BooleanField(default=False)
     created_at = models.DateField()
     topic_id = models.ForeignKey(Topic, on_delete=models.CASCADE)
 
 
 class Answers(models.Model):
-    text = models.CharField()
+    content = models.TextField()
     user_id = models.ForeignKey(User, on_delete=models.PROTECT)
     status = models.BooleanField(default=False)
     created_at = models.DateField()
