@@ -1,0 +1,38 @@
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+Table users {
+  id integer [primary key]
+  username varchar
+  role varchar
+  created_at timestamp
+}
+
+Table topic{
+  id integer [primary key]
+  text varchar
+  is_active integer
+  created_at timestamp
+}
+Table question {
+  id integer [primary key]
+  content text [note: 'Content of the post']
+  user_id integer
+  status integer
+  created_at timestamp
+  topic_id integer
+}
+Table answer{
+  id integer [primary key]
+  content text [note: 'Content of the post']
+  user_id integer
+  status integer
+  created_at timestamp
+  question_id integer
+}
+
+Ref: question.user_id > users.id // many-to-one
+Ref: answer.question_id > question.id
+Ref: question.topic_id > topic.id
+
+Ref: "answer"."created_at" < "answer"."status"
