@@ -19,12 +19,12 @@ class Question(models.Model):
     #topic_id = models.ForeignKey(topic, on_delete=models.CASCADE)//
 
 
-
-
-
-
-
-class answers (models.Model):
+class Answers(models.Model):
+    text = models.CharField()
+    user_id = models.ForeignKey(User, on_delete=models.PROTECT)
+    status = models.BooleanField(default=False)
+    created_at = models.DateField()
+    question_id = models.ForeignKey(Question,on_delete=models.CASCADE)
 
 
 
