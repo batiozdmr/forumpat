@@ -1,7 +1,27 @@
 from django.db import models
 
+class subject (models.Model):
+    text =
 
-class Topic(models.Model):
-    title = models.CharField(max_length=120, blank=False)
-    created_at = models.DateField()
-    is_active = models.BooleanField(default=False)
+
+
+
+
+class question(models.Model):
+
+
+
+
+
+
+
+class answers (models.Model):
+
+
+
+
+
+
+
+
+
