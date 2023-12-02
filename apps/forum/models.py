@@ -1,9 +1,10 @@
 from django.contrib.auth.models import User
 from django.db import models
 
-class subject (models.Model):
-    text =
-
+class Topic(models.Model):
+    title = models.CharField(max_length=120, blank=False)
+    created_at = models.DateField()
+    is_active = models.BooleanField(default=False)
 
 
 
@@ -16,7 +17,7 @@ class Question(models.Model):
     userid = models.ForeignKey(User, on_delete=models.PROTECT)
     stasus = models.BooleanField(default=False)
     created_at = models.DateField()
-    #topic_id = models.ForeignKey(topic, on_delete=models.CASCADE)//
+    topic_id = models.ForeignKey(topic, on_delete=models.CASCADE)//
 
 
 class Answers(models.Model):
