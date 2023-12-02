@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'forumpat.apps',
+    'apps.forum',
 ]
 
 MIDDLEWARE = [
