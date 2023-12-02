@@ -7,7 +7,6 @@ Table users {
   role varchar
   created_at timestamp
 }
-
 Table topic{
   id integer [primary key]
   text varchar
