@@ -3,6 +3,6 @@ from .views import *
 
 app_name = 'mainpage'
 
-urlpatterns = {
+urlpatterns = [
     path('', index, name='index'),
-}
+]
