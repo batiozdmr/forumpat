@@ -1,3 +1,13 @@
-{% for question in question_list %}
-    {{ question.content }}
-{% endfor %}
+{% extends "base.html" %}
+
+{% load static %}
+
+{% load i18n %}
+
+{% block content %}
+
+    {% for question in question_list %}
+        {{ question.content }}
+    {% endfor %}
+
+{% endblock %}
