@@ -1,9 +1,10 @@
+{% load i18n %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Simple Login Form Example</title>
+    <title>Forumpat Giriş Ekranı</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,700">
     <link href="{% static "css/login.css" %}" rel="stylesheet">
 </head>
@@ -12,19 +13,19 @@
 <div class="login-form">
     <form method="post">
         {% csrf_token %}
-        <h1>Login</h1>
+        <h1>{% trans "Giriş Yap" %}</h1>
         <div class="content">
             <div class="input-field">
-                <input type="text" placeholder="Email" autocomplete="nope" name="login">
+                <input type="text" placeholder="{% trans "E-Posta" %}" autocomplete="nope" name="login">
             </div>
             <div class="input-field">
-                <input type="password" placeholder="Password" autocomplete="new-password" name="password">
+                <input type="password" placeholder="{% trans "Şifre" %}" autocomplete="new-password" name="password">
             </div>
-            <a href="#" class="link">Forgot Your Password?</a>
+            <a href="{% url 'account_reset_password' %}" class="link">{% trans "Şifrenizi mi unuttunuz?" %}</a>
         </div>
         <div class="action">
-            <button>Register</button>
-            <button type="submit">Sign in</button>
+            <a class="button" href="{% url 'account_signup' %}"> {% trans "Üye Ol" %}</a>
+            <button type="submit"> {% trans "Giriş Yap" %} </button>
         </div>
     </form>
 </div>
