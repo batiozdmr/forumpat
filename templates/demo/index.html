@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,10 +6,10 @@
         <title>Forum :: Home Page</title>
 
         <!-- Bootstrap -->
-        <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Custom -->
-        <link href="{% static "css/custom.css" %}" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,7 +36,7 @@
             <!-- Slider -->
             <div class="tp-banner-container">
                 <div class="tp-banner" >
-                    <ul>
+                    <ul>	
                         <!-- SLIDE  -->
                         <li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
                             <!-- MAIN IMAGE -->
@@ -74,7 +73,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-xs-12 col-sm-5 col-md-4 avt">
-                            <div class="stnt pull-left">
+                            <div class="stnt pull-left">                            
                                 <form action="03_new_topic.html" method="post" class="form">
                                     <button class="btn btn-primary">Start New Topic</button>
                                 </form>
@@ -91,7 +90,7 @@
                                     <li role="presentation"><a role="menuitem" tabindex="-4" href="04_new_account.html">Create account</a></li>
                                 </ul>
                             </div>
-
+                            
                             <div class="clearfix"></div>
                         </div>
                     </div>
@@ -160,7 +159,7 @@
 
                                     </div>
                                     <div class="views"><i class="fa fa-eye"></i> 1,568</div>
-                                    <div class="time"><i class="fa fa-clock-o"></i> 24 min</div>
+                                    <div class="time"><i class="fa fa-clock-o"></i> 24 min</div>                                    
                                 </div>
                                 <div class="clearfix"></div>
                             </div><!-- POST -->
@@ -194,7 +193,7 @@
 
                                     </div>
                                     <div class="views"><i class="fa fa-eye"></i> 1,568</div>
-                                    <div class="time"><i class="fa fa-clock-o"></i> 15 min</div>
+                                    <div class="time"><i class="fa fa-clock-o"></i> 15 min</div>                                    
                                 </div>
                                 <div class="clearfix"></div>
                             </div><!-- POST -->
@@ -228,7 +227,7 @@
 
                                     </div>
                                     <div class="views"><i class="fa fa-eye"></i> 1,568</div>
-                                    <div class="time"><i class="fa fa-clock-o"></i> 2 days</div>
+                                    <div class="time"><i class="fa fa-clock-o"></i> 2 days</div>                                    
                                 </div>
                                 <div class="clearfix"></div>
                             </div><!-- POST -->
@@ -262,7 +261,7 @@
 
                                     </div>
                                     <div class="views"><i class="fa fa-eye"></i> 1,568</div>
-                                    <div class="time"><i class="fa fa-clock-o"></i> 24 min</div>
+                                    <div class="time"><i class="fa fa-clock-o"></i> 24 min</div>                                    
                                 </div>
                                 <div class="clearfix"></div>
                             </div><!-- POST -->
@@ -297,7 +296,7 @@
 
                                     </div>
                                     <div class="views"><i class="fa fa-eye"></i> 1,568</div>
-                                    <div class="time"><i class="fa fa-clock-o"></i> 24 min</div>
+                                    <div class="time"><i class="fa fa-clock-o"></i> 24 min</div>                                    
                                 </div>
                                 <div class="clearfix"></div>
                             </div><!-- POST -->
@@ -331,7 +330,7 @@
 
                                     </div>
                                     <div class="views"><i class="fa fa-eye"></i> 1,568</div>
-                                    <div class="time"><i class="fa fa-clock-o"></i> 15 min</div>
+                                    <div class="time"><i class="fa fa-clock-o"></i> 15 min</div>                                    
                                 </div>
                                 <div class="clearfix"></div>
                             </div><!-- POST -->
@@ -365,7 +364,7 @@
 
                                     </div>
                                     <div class="views"><i class="fa fa-eye"></i> 1,568</div>
-                                    <div class="time"><i class="fa fa-clock-o"></i> 2 days</div>
+                                    <div class="time"><i class="fa fa-clock-o"></i> 2 days</div>                                    
                                 </div>
                                 <div class="clearfix"></div>
                             </div><!-- POST -->
@@ -407,8 +406,8 @@
                                                     </div>
                                                 </td>
                                                 <td class="chbox">
-                                                    <input id="opt1" type="radio" name="opt" value="1">
-                                                    <label for="opt1"></label>
+                                                    <input id="opt1" type="radio" name="opt" value="1">  
+                                                    <label for="opt1"></label>  
                                                 </td>
                                             </tr>
                                             <tr>
@@ -420,8 +419,8 @@
                                                     </div>
                                                 </td>
                                                 <td class="chbox">
-                                                    <input id="opt2" type="radio" name="opt" value="2" checked>
-                                                    <label for="opt2"></label>
+                                                    <input id="opt2" type="radio" name="opt" value="2" checked>  
+                                                    <label for="opt2"></label>  
                                                 </td>
                                             </tr>
                                             <tr>
@@ -433,8 +432,8 @@
                                                     </div>
                                                 </td>
                                                 <td class="chbox">
-                                                    <input id="opt3" type="radio" name="opt" value="3">
-                                                    <label for="opt3"></label>
+                                                    <input id="opt3" type="radio" name="opt" value="3">  
+                                                    <label for="opt3"></label>  
                                                 </td>
                                             </tr>
                                         </table>
@@ -528,7 +527,7 @@
 
         <!-- get jQuery from the google apis -->
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
-
+ 
 
         <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
         <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
@@ -536,5 +535,27 @@
 
         <script src="js/bootstrap.min.js"></script>
 
+
+        <!-- LOOK THE DOCUMENTATION FOR MORE INFORMATIONS -->
+        <script type="text/javascript">
+            
+            var revapi;
+
+            jQuery(document).ready(function() {
+                "use strict";
+                revapi = jQuery('.tp-banner').revolution(
+                        {
+                            delay: 15000,
+                            startwidth: 1200,
+                            startheight: 278,
+                            hideThumbs: 10,
+                            fullWidth: "on"
+                        });
+
+            });	//ready
+
+        </script>
+
+        <!-- END REVOLUTION SLIDER -->
     </body>
 </html>
