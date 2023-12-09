@@ -1,0 +1,39 @@
+{% load i18n %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forumpat Üyelik Ekranı</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,700">
+    <link href="{% static "css/login.css" %}" rel="stylesheet">
+</head>
+<body>
+
+<div class="login-form">
+    <form method="post">
+        {% csrf_token %}
+        <h1>{% trans "Üye Ol" %}</h1>
+        <div class="content">
+            <div class="input-field">
+                <input type="text" placeholder="{% trans "Kullanıcı Adı" %}" autocomplete="nope" name="username">
+            </div>
+             <div class="input-field">
+                <input type="text" placeholder="{% trans "E-Posta" %}" autocomplete="nope" name="email">
+            </div>
+             <div class="input-field">
+                <input type="password" placeholder="{% trans "Şifre" %}" autocomplete="nope" name="password1">
+            </div>
+
+            <div class="input-field">
+                <input type="password" placeholder="{% trans "Şifre Tekrar" %}" autocomplete="new-password" name="password2">
+            </div>
+        </div>
+        <div class="action">
+            <a class="button" href="{% url 'account_login' %}"> {% trans "Giriş Yap" %}</a>
+            <button type="submit"> {% trans "Üye Ol" %} </button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
