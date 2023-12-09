@@ -13,7 +13,7 @@ class Question(models.Model):
     userid = models.ForeignKey(User, on_delete=models.PROTECT)
     is_active = models.BooleanField(default=False)
     created_at = models.DateField()
-    topic_id = models.ForeignKey(Topic, on_delete=models.CASCADE)
+    topic = models.ForeignKey(Topic, on_delete=models.CASCADE,null=True)
 
 
 class Answers(models.Model):
